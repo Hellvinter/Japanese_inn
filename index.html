@@ -6,6 +6,219 @@
 	<title>Hot spring rukan</title>
 </head>
 <body>
+<!-- =========================== 
+Create a header of main page
+==============================-->
+<header class="header" id="header">
+	<!-- give to div fullscreen width by container-fluid -->
+	<div class="container-fluid">
+		<!-- wrap up a div by row -->
+		<div class="row">
+			<!--=====================
+			 Adding logotype 
+			======================-->
+			<div class="logo" id="logo">
+				<a href="#"><img src="" alt="Company logotype"></a>
+			</div>
+			<!--=====================
+			 Create navigation
+			======================-->
+			<nav class="navbar" id="navbar">
+				<ul class="nav" id="nav">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Deals</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Culture</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Galery</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- hamburger button -->
+			<div class="menu-toggle">
+				<div class="humburger"></div>
+			</div>
+		</div>
+		<!-- end of nav -->
+		<!--=====================
+		Main content of header
+		======================-->
+		<div class="header_content" id="header_content">
 
+			<h1 class="heading" id="main-heading">Stay in our traditional inn <br>
+			<span class="heading-span">
+				<a href="#" class="heading-span--link">Feel united with nature</a>
+			</span>
+			</h1>
+		
+		<!-- create a div to later rullfill it with map -->
+		<!-- <div class="goggle-map"></div> -->
+		<!-- end of map code -->
+		
+		<!--=====================
+		Creat a div with checkboxes
+		in order to change content
+		of header to google map
+		and back
+		======================-->
+			<div class="row">
+				<div class="div header_togglers" id="header_togglers">
+					<button class="btn" id="heading-checkbox" type="checkbox"></button>
+					<button class="btn" id="map-checkbox" type="checkbox"></button>
+					<button class="btn" id="arrowDown-btn" type="button"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=====================
+	Main content
+======================-->
+<main class="home-main" id="home-main">
+	<!--======================== 
+	Creating about subection 
+	=========================-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="about">
+				<div class="about-content">
+					<!-- first item -->
+					<div class="about-content--wrapper">
+						<h4 class="about-content--heading">
+
+						</h4>
+						<p class="about-content--text">
+							
+						</p>
+					</div>
+				</div>
+				<div class="about-content">
+					<!-- second item -->
+					<div class="about-content--wrapper">
+						<h4 class="about-content--heading">
+
+						</h4>
+						<p class="about-content--text">
+							
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of about subection -->
+	<!--============================= 
+	Creating activites subsection.
+	Adding card witch gif as a background
+	zoom in while hover and poping up info
+	===============================-->
+	<div class="container-fluid">
+		<div class="events" id="events">
+			<row id="events-row1">
+				<!-- 1th item -->
+				<div class="events-item" id="events-item1">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+				<!-- 2nd item -->
+				<div class="events-item" id="events-item2">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+				<!-- 3rd item -->
+				<div class="events-item" id="events-item3">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+			</row>
+			<!--==================
+			This row must be headen
+			until "load more" button
+			will be clicked
+			then 2nd row will showed	
+			======================-->
+			<row id="events-row2">
+				<!-- 4th item -->
+				<div class="events-item" id="events-item4">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+				<!-- 5th item -->
+				<div class="events-item" id="events-item5">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+				<!--  6th item -->
+				<div class="events-item" id="events-item6">
+					<h4 class="events-item--heading"></h4>
+					<p class="events-item--text"></p>
+					<button class="btn events-item--btn"></button>
+				</div>
+			</row>
+		</div>
+		<!--===============
+		This is load more 
+		button
+		after clicked it 
+		whill show 2nd row
+		of events
+		then text will change
+		to show less and
+		second click will hide
+		2nd row of events
+		=================-->
+		<div class="more" id="more">
+			<button class="btn" id="loadMore-btn">load more</button>
+		</div>
+	</div>
+</main>
+<!-- end of main content -->
+<!--============ 
+Footer
+==============-->
+<footer class="footer" id="footer">
+	<!-- footer nav -->
+	<div class="container">
+		<div class="nav footer-navbar" id="footer-navbar">
+			<ul class="footer-nav">
+				<li class="footer-nav--item">
+					<a href="" class="footer-nav--link">Home</a>
+				</li>
+				<li class="footer-nav--item">
+					<a href="" class="footer-nav--link">Deals</a>
+				</li>
+				<li class="footer-nav--item">
+					<a href="" class="footer-nav--link">Culture</a>
+				</li>
+				<li class="footer-nav--item">
+					<a href="" class="footer-nav--link">Galery</a>
+				</li>
+			</ul>
+		</div>
+	
+	<!-- end of footer nav -->
+	<!-- social media -->
+		<div class="social">
+			<a href="#" class="social-link"></a>
+			<a href="#" class="social-link"></a>
+			<a href="#" class="social-link"></a>
+			<a href="#" class="social-link"></a>
+		</div>
+		<!-- adding copyright -->
+		<div class="copyraight"><p>&#169; Hellvinter 2019</p></div>
+	</div>
+</footer>
+<!-- end of footer -->
 </body>
 </html>
