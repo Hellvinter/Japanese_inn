@@ -3,7 +3,9 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
+  'abstracts/my_variables',
   'abstracts/functions',
+  'abstracts/my_functions',
   'abstracts/mixins';
 
 // 2. Vendors
@@ -13,7 +15,7 @@
 // 3. Base stuff
 @import
   'base/base',
-  'base/fonts',
+  'base/my_base',
   'base/typography',
   'base/helpers';
 
