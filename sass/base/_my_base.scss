@@ -6,7 +6,14 @@ ul {
 	list-style: none;	
 }
 
-button {
-	style: none;
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 

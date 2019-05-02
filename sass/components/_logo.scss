@@ -1,0 +1,9 @@
+.logo {
+	background: $light-red;
+	width: 6rem;
+	height: auto;
+	@include border(1px, solid, $dark-grey, 50%);
+	position: relative;
+	//add some cool style
+	//logo will look like wave
+}	

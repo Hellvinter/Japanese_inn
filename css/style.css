@@ -12,6 +12,42 @@ based on col-# class
 .col-12 {
   width: 100%;
 }; */
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
 @media screen and (max-width: 575.99px) {
   .col-xs-1 {
     width: 8.3333333333%; }
@@ -634,8 +670,13 @@ body {
 ul {
   list-style: none; }
 
-button {
-  style: none; }
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 html {
   font-size: 16px; }
@@ -654,8 +695,7 @@ html {
 a {
   color: #fff; }
   a:hover {
-    color: #b2332c;
-    text-decoration: none; }
+    color: #b2332c; }
 
 h1 {
   font-size: 2.3rem; }
@@ -678,9 +718,11 @@ h4 {
  * 1. Make the container full-width with a maximum width
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
+ * 4. additional container for more flexebility
+ * 5. add row give it display flex 
  */
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -690,8 +732,26 @@ h4 {
   /* 3 */
   padding-right: 20px;
   /* 3 */
-  width: 100%;
+  width: 80%;
   /* 1 */ }
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap; }
 
 /**
  * Hide text while making it readable for screen readers
@@ -719,5 +779,104 @@ h4 {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.header {
+  background: #454a54 url("../../img/home_bg/japan_hot_springs_1280x853.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative; }
+  .header .header-top {
+    background-color: #454a54; }
+  .header .logo {
+    margin: 0 auto; }
+  .header .navbar {
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    background-color: #454a54; }
+  .header .menu-toggle {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1.8rem;
+    right: 1.5rem;
+    cursor: pointer; }
+  .header h1 {
+    text-align: center;
+    -webkit-transform: translateY(15rem);
+    -ms-transform: translateY(15rem);
+    transform: translateY(15rem); }
+  .header .header_togglers {
+    width: 100%;
+    background-color: #454a54;
+    position: absolute;
+    bottom: 0; }
+
+.logo {
+  background: #b2332c;
+  width: 6rem;
+  height: auto;
+  border: 1px solid #454a54;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative; }
+
+.navbar {
+  background-color: #454a54;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .navbar .nav {
+    margin: 0;
+    padding: 0; }
+  .navbar .nav-item {
+    margin: 1rem;
+    font-size: 1.2em;
+    border-bottom: 1px solid #575e6b;
+    text-align: center; }
+  .navbar .nav-link {
+    padding: .4rem; }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #fff;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px; }
+
+.hamburger::before {
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px); }
+
+.hamburger::after {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px); }
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.open .hamburger::before {
+  opacity: 0; }
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-3px) rotate(-90deg);
+  -ms-transform: translateY(-3px) rotate(-90deg);
+  transform: translateY(-3px) rotate(-90deg); }
+
+#heading-checkbox,
+#map-checkbox,
+#arrowDown-btn {
+  border: none;
+  background: #454a54; }
 
 

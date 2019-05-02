@@ -1,0 +1,21 @@
+.navbar {
+	background-color: $dark-grey;
+	display: flex;
+	justify-content: center;
+	
+	.nav {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-item {
+		margin: 1rem;
+		font-size: 1.2em;
+		border-bottom: 1px solid $light-grey;
+		text-align: center;
+	}
+
+	.nav-link {
+		padding: .4rem;
+	}
+}

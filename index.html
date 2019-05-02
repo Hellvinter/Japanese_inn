@@ -16,51 +16,55 @@ Create a header of main page
 ==============================-->
 <header class="header" id="header">
 	<!-- give to div fullscreen width by container-fluid -->
-	<div class="container-fluid">
+	
 		<!-- wrap up a div by row -->
-		<div class="row">
-			<!--=====================
-			 Adding logotype 
-			======================-->
-			<div class="logo" id="logo">
-				<a href="#"><img src="img/logo/logo.png" alt="Company logotype"></a>
+		<div class="header-top">
+			<div class="row">
+
+				<!--=====================
+				 Adding logotype 
+				======================-->
+				<div class="logo" id="logo">
+					<a href="#"><img src="img/logo/logo.png" alt="Company logotype"></a>
+				</div>
+				<!--=====================
+				 Create navigation
+				======================-->
+				<nav class="navbar" id="navbar">
+					<ul class="nav" id="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Deals</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Culture</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Galery</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- hamburger button -->
+				<div class="menu-toggle">
+					<div class="hamburger"></div>
+				</div>
 			</div>
-			<!--=====================
-			 Create navigation
-			======================-->
-			<nav class="navbar" id="navbar">
-				<ul class="nav" id="nav">
-					<li class="nav-item">
-						<a href="#" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Deals</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Culture</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Galery</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- hamburger button -->
-			<div class="menu-toggle">
-				<div class="humburger"></div>
-			</div>
-		</div>
+		</div>		
 		<!-- end of nav -->
 		<!--=====================
 		Main content of header
 		======================-->
-		<div class="header_content" id="header_content">
 
-			<h1 class="heading" id="main-heading">Stay in our traditional inn <br>
-			<span class="heading-span">
-				<a href="#" class="heading-span--link">Feel united with nature</a>
-			</span>
-			</h1>
-		
+		<div class="header_content" id="header_content">
+			<div class="container-fluid">
+				<h1 class="heading" id="main-heading">Stay in our traditional inn <br>
+				<span class="heading-span">
+					<a href="#" class="heading-span--link">Feel united with nature</a>
+				</span>
+				</h1>
+			</div>
 		<!-- create a div to later rullfill it with map -->
 		<!-- <div class="goggle-map"></div> -->
 		<!-- end of map code -->
@@ -71,14 +75,21 @@ Create a header of main page
 		of header to google map
 		and back
 		======================-->
-			<div class="row">
-				<div class="div header_togglers" id="header_togglers">
-					<button class="btn" id="heading-checkbox" type="checkbox"></button>
-					<button class="btn" id="map-checkbox" type="checkbox"></button>
-					<button class="btn" id="arrowDown-btn" type="button"></button>
+			
+			<div class="header_togglers" id="header_togglers">
+				<div class="row">
+					<button class="btn" id="heading-checkbox" type="checkbox">
+						<img src="https://img.icons8.com/wired/24/000000/book.png">
+					</button>
+					<button class="btn" id="map-checkbox" type="checkbox">
+						<img src="https://img.icons8.com/ios/24/000000/map.png">
+					</button>
+					<button class="btn" id="arrowDown-btn" type="button">
+						<img src="https://img.icons8.com/ios/24/000000/expand-arrow-filled.png">
+					</button>
 				</div>
 			</div>
-		</div>
+		
 	</div>
 </header>
 
@@ -92,7 +103,7 @@ Create a header of main page
 	<div class="container-fluid">
 		<div class="row">
 			<div class="about">
-				<div class="about-content">
+				<div class="about-content col-5">
 					<!-- first item -->
 					<div class="about-content--wrapper">
 						<h4 class="about-content--heading">
@@ -103,7 +114,7 @@ Create a header of main page
 						</p>
 					</div>
 				</div>
-				<div class="about-content">
+				<div class="about-content col-5">
 					<!-- second item -->
 					<div class="about-content--wrapper">
 						<h4 class="about-content--heading">

@@ -1,6 +1,7 @@
 ////Colors var
 
 $dark-grey: rgb(69,74,84);
+$light-grey: rgb(87, 94, 107); 
 $light-red: rgb(178,51,44);
 
 ////end of colors var
@@ -16,3 +17,6 @@ $xl : 1200px;
 
 ///
 //// end of breakpoint var
+
+//rewrite max-width var 
+$max-width: 1200px;

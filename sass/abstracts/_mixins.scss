@@ -2,6 +2,18 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+//border mixin
+@mixin border ($width, $style, $color, $radius) {
+  border: $width $style $color;
+  -webkit-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector

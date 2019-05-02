@@ -19,6 +19,11 @@ based on col-# class
   width: 100%;
 }; */  
 
+//for all screen
+@for $i from 1 through 12 {
+	  .col-#{$i} { width: 100%/12 * $i; }
+	};	
+	
 // for screen less then 576 px 
 @media screen and (max-width: $xs) {
 	@for $i from 1 through 12 {
