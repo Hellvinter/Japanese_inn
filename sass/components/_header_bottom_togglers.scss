@@ -1,14 +1,15 @@
 //placement of header bottom line of buttons
 
-.header-togglers {
-	
+.header_togglers {
+	button {
+		border: none;
+		background: $light-grey;
+		padding: .2rem;
+	}
+	#arrowDown-btn {
+		float: right;
+	} 	
 }
 
-//styles must be moved to different fule
+//styles must be moved to different file
 
-#heading-checkbox,
-#map-checkbox,
-#arrowDown-btn {
-	border: none;
-	background: $dark-grey;	
-}

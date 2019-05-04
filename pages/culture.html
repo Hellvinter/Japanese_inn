@@ -12,41 +12,42 @@
 <body>
 	
 <header class="culture-header">
-	<div class="container-fluid">
-		<!-- wrap up a div by row -->
-		<div class="row">
-			<!--=====================
-			 Adding logotype 
-			======================-->
-			<div class="logo" id="logo">
-				<a href="#"><img src="#" alt="Company logotype"></a>
+	
+		<div class="header-top">
+			<div class="row">
+
+				<!--=====================
+				 Adding logotype 
+				======================-->
+				<div class="logo" id="logo">
+					<a href="#"><img src="../img/logo/logo.png" alt="Company logotype"></a>
+				</div>
+				<!--=====================
+				 Create navigation
+				======================-->
+				<nav class="navbar" id="navbar">
+					<ul class="nav" id="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Deals</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Culture</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Galery</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- hamburger button -->
+				<div class="menu-toggle">
+					<div class="hamburger"></div>
+				</div>
 			</div>
-			<!--=====================
-			 Create navigation
-			======================-->
-			<nav class="navbar" id="navbar">
-				<ul class="nav" id="nav">
-					<li class="nav-item">
-						<a href="#" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Deals</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Culture</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Galery</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- hamburger button -->
-			<div class="menu-toggle">
-				<div class="humburger"></div>
-			</div>
-		</div>
+		</div>		
 		<!-- end of nav -->
-	</div>	
 </header>	
 
 <!--=========================
@@ -64,12 +65,13 @@ Main content of culture page
 	===============================-->
 	<div class="container-fluid">
 		<div class="events" id="events">
-			<div id="events-row1">
+			<div class="grid" id="events-row1">
 				<!--================================================
 				 p tag should be hidden until button will be clicked
 				then text show up ================================-->
 				<!-- 1th item -->
 				<div class="events-item" id="events-item1">
+					<img src="../img/culture_img_video/golden-temple_1280x853.png" alt="Kyoto golden temple" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod enim natus, animi eos, dolore vero.
@@ -78,6 +80,7 @@ Main content of culture page
 				</div>
 				<!-- 2nd item -->
 				<div class="events-item" id="events-item2">
+					<img src="../img/culture_img_video/red-lanterns_1280x853.png" alt="Red chinese lanterns" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae facere qui aperiam temporibus ducimus?
@@ -86,6 +89,7 @@ Main content of culture page
 				</div>
 				<!-- 3rd item -->
 				<div class="events-item" id="events-item3">
+					<img src="../img/culture_img_video/tea_1280x853.png" alt="tea ceremony" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi hic aperiam vitae quia repellat impedit.
@@ -97,9 +101,10 @@ Main content of culture page
 			On this page second row
 			must be showeb from start	
 			======================-->
-			<div id="events-row2">
+			<div class="grid" id="events-row2">
 				<!-- 4th item -->
 				<div class="events-item" id="events-item4">
+					<img src="../img/culture_img_video/red-lanterns_1280x853.png" alt="Red chinese lanterns" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident reprehenderit, officiis temporibus dolorum perspiciatis ipsam.
@@ -108,6 +113,7 @@ Main content of culture page
 				</div>
 				<!-- 5th item -->
 				<div class="events-item" id="events-item5">
+					<img src="../img/culture_img_video/tea_1280x853.png" alt="tea ceremony" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, accusantium nihil quaerat excepturi optio quidem.
@@ -116,6 +122,7 @@ Main content of culture page
 				</div>
 				<!--  6th item -->
 				<div class="events-item" id="events-item6">
+					<img src="../img/culture_img_video/golden-temple_1280x853.png" alt="Kyoto golden temple" class="events-item--img">
 					<h4 class="events-item--heading">Some heading</h4>
 					<p class="events-item--text text-hidden">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi in illum recusandae, molestiae, cupiditate.
@@ -152,10 +159,18 @@ Main content of culture page
 	<!-- end of footer nav -->
 	<!-- social media -->
 		<div class="social">
-			<a href="#" class="social-link"></a>
-			<a href="#" class="social-link"></a>
-			<a href="#" class="social-link"></a>
-			<a href="#" class="social-link"></a>
+			<a href="#" class="social-link">
+				<img src="https://img.icons8.com/color/36/000000/youtube-play.png">
+			</a>
+			<a href="#" class="social-link">
+				<img src="https://img.icons8.com/color/36/000000/facebook.png">
+			</a>
+			<a href="#" class="social-link">
+				<img src="https://img.icons8.com/color/36/000000/twitter.png">
+			</a>
+			<a href="#" class="social-link">
+				<img src="https://img.icons8.com/color/36/000000/instagram-new.png">
+			</a>
 		</div>
 		<!-- adding copyright -->
 		<div class="copyraight"><p>&#169; Hellvinter 2019</p></div>

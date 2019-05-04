@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+
+/// Footer navigation in nav.scss
+
+
+.social {
+	text-align: center;
+	&-link {
+		padding: .2rem;
+	}
+}
+
+.copyraight {
+	text-align: center;
+}

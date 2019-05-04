@@ -1,0 +1,103 @@
+/*=======================
+HOME PAGE MAIN CONTENT  
+=======================*/
+
+/* 
+Because about section is so small.
+I decide to write layout and style of it
+in one file 
+ */
+.about {
+	background-color: $light-grey;
+	
+	
+	.row {
+		flex-direction: column;
+	}
+	
+	.about-content--heading {
+		padding-top: 1rem;
+		text-align: center;
+		position: relative;
+		border-bottom: 2px solid $dark-grey;
+		
+	}
+
+	.about-content--text {
+		text-align: justify;
+		padding: 1rem;
+	}
+
+	#about-2 {
+		background-color: rgb(44,44,44);
+	}
+
+}
+//End of about section
+
+/* 
+layout of events
+*/
+.events {
+	margin-top: 2rem;
+}
+
+.events-item {
+	position: relative; // making position relative for change positioning of content
+	margin-bottom: 0;
+
+	&--img {
+		position: relative;
+		z-index: -1;
+		margin-bottom: -.2rem;
+	}
+	&--heading,  {
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: .9;
+	}
+
+	&--text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	}
+
+	&--btn {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+//placing More button
+.more {
+	padding: 1rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px solid $light-grey;
+	#loadMore-btn {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/*============
+Home page end 
+============*/
+
+/*=======================
+CULTURE PAGE MAIN CONTENT  
+=======================*/
+
+#culture-main {
+	.events-item--text {
+		top: 25%;
+	}
+
+}
