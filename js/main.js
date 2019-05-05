@@ -1,0 +1,7 @@
+//// Js features
+
+$(function() {
+
+
+
+});
