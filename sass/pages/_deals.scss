@@ -1,0 +1,87 @@
+/*=================================== 
+In this file I styling main content
+of deals page, such as positioning
+colors fonts etc.
+==================================*/
+
+///// Dealing with positioning of carsd/////
+
+.deals-main {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	
+	&--heading {
+		text-align: center;
+		margin-bottom: 2rem;
+		text-transform: capitalize; 
+	}
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	.deals-card {
+		margin: 0 auto;
+		margin-bottom: .3rem;
+		
+		&--heading {
+			text-align: center;
+			h4 {
+				margin-bottom: -.5rem;
+			}
+		}
+		
+		&--btn {
+			display: block;
+			margin: 0 auto;
+			margin-top: .5rem;
+			margin-bottom: .5rem;
+		}
+	}
+} 
+
+/////Positioning Submit form/////
+#newsletter {
+	.heading {
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	.email, .submit {
+		margin: 0 auto;
+	}
+
+	.email {
+		margin-bottom: 1rem;
+	}
+
+	.submit {
+		padding: .3rem;
+	}
+
+}
+
+///// End of positioning/////
+
+/////Styling cards/////
+.deals-card {
+	border-radius: 2%;
+	background-color: $light-grey;
+	color: $silver;
+	
+	&--heading {
+		h4 {
+			text-transform: uppercase;
+		}
+	}
+	
+	&--img {
+		opacity: .8;
+	}
+
+	&--btn {
+		border-color: $dark-grey;
+	}
+}
+
+/////End of cards styling/////

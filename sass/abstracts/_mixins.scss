@@ -2,12 +2,19 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-//border mixin
+/////border mixin
 @mixin border ($width, $style, $color, $radius) {
   border: $width $style $color;
   -webkit-border-radius: $radius;
           border-radius: $radius;
 }
+
+///// Box-shadow mixin
+@mixin shadow ($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+          box-shadow: $x $y $blur $spread $color;
+}
+
 
 
 

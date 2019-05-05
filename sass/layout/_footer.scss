@@ -4,7 +4,10 @@
 
 
 /// Footer navigation in nav.scss
-
+#footer {
+	border-top: 1px solid $light-grey;
+	margin-top: .5rem;
+}
 
 .social {
 	text-align: center;

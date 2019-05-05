@@ -25,15 +25,18 @@
 //////Overall nav positioning
 .header-top {
 		background-color: $dark-grey;
+		border-bottom: 1px solid $light-grey;
 	}
 
 .logo {
 	margin: 0 auto;
+	margin-top: .1rem;
+	margin-bottom: .1rem;
 }
 	
 .navbar {
 	position: absolute;
-	top: 3.78rem;
+	top: 4.03rem;
 	right: 0;
 	background-color: $dark-grey;
 	border-left: 1px solid $light-grey;
