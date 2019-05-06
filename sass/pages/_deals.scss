@@ -1,41 +1,49 @@
-/*=================================== 
-In this file I styling main content
-of deals page, such as positioning
-colors fonts etc.
-==================================*/
+//=================================
+// On this page will be unic styles
+// Deals page
+//=================================
 
 ///// Dealing with positioning of carsd/////
 
-.deals-main {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+.deals-main { 
+	margin-top: 2rem;//// Intend from header
+	margin-bottom: 2rem;//// Intend from footer
 	
 	&--heading {
-		text-align: center;
+		text-align: center;///// positioning and styles of page heading
 		margin-bottom: 2rem;
-		text-transform: capitalize; 
+		text-transform: capitalize; //// Each First Latter Of Words Are Capitral
 	}
 }
 
 .row {
-	display: flex;
-	flex-direction: column;
+	flex-direction: column; //// forming oneeeee big column on mobile devices 
+	
 	.deals-card {
-		margin: 0 auto;
-		margin-bottom: .3rem;
+		background-color: $light-grey;
+		color: $silver;
+		border-radius: 2%;
+		margin: 0 auto; //// centering cards
+		margin-bottom: .3rem; /// little intend between cards
 		
 		&--heading {
 			text-align: center;
 			h4 {
-				margin-bottom: -.5rem;
+				margin-bottom: -.5rem; //// reduse margin betweeb h4 and p tags of cards
+				text-transform: uppercase;
 			}
 		}
+
+		&--img {
+		opacity: .8;
+		}	
 		
 		&--btn {
-			display: block;
+			display: block;  //// styling buttons
 			margin: 0 auto;
 			margin-top: .5rem;
 			margin-bottom: .5rem;
+			border-color: $dark-grey;
 		}
 	}
 } 
@@ -63,25 +71,3 @@ colors fonts etc.
 
 ///// End of positioning/////
 
-/////Styling cards/////
-.deals-card {
-	border-radius: 2%;
-	background-color: $light-grey;
-	color: $silver;
-	
-	&--heading {
-		h4 {
-			text-transform: uppercase;
-		}
-	}
-	
-	&--img {
-		opacity: .8;
-	}
-
-	&--btn {
-		border-color: $dark-grey;
-	}
-}
-
-/////End of cards styling/////

@@ -1,8 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+//Basic style of header
+//Nav positioning and styles
+// Lies in components folder _nav.scss file
+//Media query's for nav in the same file
+
 .header {
-	//basic style of header
 	background: $dark-grey url("../../img/home_bg/japan_hot_springs_1280x853.png") center no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -22,38 +27,25 @@
 	}
 }
 
-//////Overall nav positioning
+
 .header-top {
+		position: relative; /// without that navigation will gonna wild 
 		background-color: $dark-grey;
 		border-bottom: 1px solid $light-grey;
 	}
 
+//// LOGO styles
+
 .logo {
+	background: $light-red;
+	width: 6rem;
+	height: auto;
 	margin: 0 auto;
 	margin-top: .1rem;
 	margin-bottom: .1rem;
+	@include border(1px, solid, $dark-grey, 50%);
 }
-	
-.navbar {
-	position: absolute;
-	top: 4.03rem;
-	right: 0;
-	background-color: $dark-grey;
-	border-left: 1px solid $light-grey;
-	border-right: 1px solid $light-grey;
-	border-bottom: 1px solid $light-grey;
-}
-
-//humburger menu
-.menu-toggle {
-	width: 1rem;
-	height: 1rem;
-	position: absolute;
-	top: 1.8rem;
-	right: 1.5rem;
-	cursor: pointer;
-}
-
+///end of logo styles
 
 
 

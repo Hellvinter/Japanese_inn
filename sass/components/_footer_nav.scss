@@ -1,0 +1,12 @@
+///// Styles of footer nav /////
+.footer-navbar {
+	display: flex;
+	justify-content: center;
+	
+	.footer-nav--item {
+		padding: .2rem;
+		margin-right: 2rem;
+		text-align: center;
+		border-bottom: 1px solid $light-grey;
+	}
+}

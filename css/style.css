@@ -1,3 +1,8 @@
+/*////////////// 
+
+Not my vars below
+
+/////////////*/
 /*=========================
 Adding flexible grid system
 based on col-# class
@@ -228,6 +233,11 @@ based on col-# class
 
   .col-xl-12 {
     width: 100%; } }
+/*///////////////
+
+Not my functions below
+
+/////////////*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -655,15 +665,6 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
-/**
- * Basic styles for links
- */
-a {
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
-
 body {
   background: #454a54; }
 
@@ -680,6 +681,15 @@ img {
 
 button {
   border: none; }
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #222222;
+    text-decoration: underline; }
 
 html {
   font-size: 16px; }
@@ -799,39 +809,24 @@ h4 {
     bottom: 0; }
 
 .header-top {
+  position: relative;
   background-color: #454a54;
   border-bottom: 1px solid #575e6b; }
 
 .logo {
+  background: #b2332c;
+  width: 6rem;
+  height: auto;
   margin: 0 auto;
   margin-top: .1rem;
-  margin-bottom: .1rem; }
-
-.navbar {
-  position: absolute;
-  top: 4.03rem;
-  right: 0;
-  background-color: #454a54;
-  border-left: 1px solid #575e6b;
-  border-right: 1px solid #575e6b;
-  border-bottom: 1px solid #575e6b; }
-
-.menu-toggle {
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  top: 1.8rem;
-  right: 1.5rem;
-  cursor: pointer; }
+  margin-bottom: .1rem;
+  border: 1px solid #454a54;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
 
 /*=======================
 HOME PAGE MAIN CONTENT  
 =======================*/
-/* 
-Because about section is so small.
-I decide to write layout and style of it
-in one file 
- */
 .about {
   background-color: #575e6b; }
   .about .row {
@@ -842,7 +837,6 @@ in one file
   .about .about-content--heading {
     padding-top: 1rem;
     text-align: center;
-    position: relative;
     border-bottom: 2px solid #454a54; }
   .about .about-content--text {
     text-align: justify;
@@ -850,9 +844,6 @@ in one file
   .about #about-2 {
     background-color: #2c2c2c; }
 
-/* 
-layout of events
-*/
 .events {
   margin-top: 2rem; }
 
@@ -895,15 +886,17 @@ layout of events
     display: block;
     margin: 0 auto; }
 
+/* .events-row2--hidenn {
+	display:none;
+	}
+
+.events-row2--showed {
+	display: block;
+}	 
+ */
 /*============
 Home page end 
 ============*/
-/*=======================
-CULTURE PAGE MAIN CONTENT  
-=======================*/
-#culture-main .events-item--text {
-  top: 25%; }
-
 #footer {
   border-top: 1px solid #575e6b;
   margin-top: .5rem; }
@@ -916,46 +909,46 @@ CULTURE PAGE MAIN CONTENT
 .copyraight {
   text-align: center; }
 
-.logo {
-  background: #b2332c;
-  width: 6rem;
-  height: auto;
-  border: 1px solid #454a54;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  position: relative; }
-
 .navbar {
+  position: absolute;
+  top: 100%;
+  right: 0%;
   background-color: #454a54;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .navbar .nav {
-    margin: 0;
-    padding: 0; }
-  .navbar .nav-item {
-    margin: 1rem;
-    font-size: 1.2em;
-    border-bottom: 1px solid #575e6b;
-    text-align: center; }
-  .navbar .nav-link {
-    padding: .4rem; }
+  border-left: 1px solid #575e6b;
+  border-right: 1px solid #575e6b;
+  border-bottom: 1px solid #575e6b;
+  -webkit-clip-path: circle(0px at top right);
+  clip-path: circle(0px at top right);
+  -webkit-transition: -webkit-clip-path ease-in-out 700ms;
+  transition: -webkit-clip-path ease-in-out 700ms;
+  -o-transition: clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms; }
 
-.footer-navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .footer-navbar .footer-nav--item {
-    padding: .2rem;
-    margin-right: 2rem;
-    text-align: center;
-    border-bottom: 1px solid #575e6b; }
+.navbar--open {
+  -webkit-clip-path: circle(250% at top right);
+  clip-path: circle(250% at top right); }
+
+.nav {
+  margin: 0;
+  padding: 0; }
+
+.nav-item {
+  margin: 1rem;
+  font-size: 1.2em;
+  border-bottom: 1px solid #575e6b;
+  text-align: center; }
+
+.nav-link {
+  padding: .4rem; }
+
+.menu-toggle {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  cursor: pointer; }
 
 .hamburger,
 .hamburger::before,
@@ -990,12 +983,32 @@ CULTURE PAGE MAIN CONTENT
   -ms-transform: translateY(-3px) rotate(-90deg);
   transform: translateY(-3px) rotate(-90deg); }
 
-.header_togglers button {
-  border: none;
-  background: #575e6b;
-  padding: .2rem; }
-.header_togglers #arrowDown-btn {
-  float: right; }
+/*========================
+	MEDIA 
+=======================*/
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none; }
+
+  .navbar {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    -webkit-clip-path: initial;
+    clip-path: initial; } }
+.footer-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .footer-navbar .footer-nav--item {
+    padding: .2rem;
+    margin-right: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #575e6b; }
 
 .btn {
   background: none;
@@ -1007,6 +1020,13 @@ CULTURE PAGE MAIN CONTENT
   .btn:active {
     color: #b2332c; }
 
+.header_togglers button {
+  border: none;
+  background: #575e6b;
+  padding: .2rem; }
+.header_togglers #arrowDown-btn {
+  float: right; }
+
 .events-item--btn {
   padding: .2rem; }
 
@@ -1014,11 +1034,6 @@ CULTURE PAGE MAIN CONTENT
   padding: .3rem;
   text-transform: uppercase; }
 
-/*=================================== 
-In this file I styling main content
-of deals page, such as positioning
-colors fonts etc.
-==================================*/
 .deals-main {
   margin-top: 2rem;
   margin-bottom: 2rem; }
@@ -1028,25 +1043,29 @@ colors fonts etc.
     text-transform: capitalize; }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
   .row .deals-card {
+    background-color: #575e6b;
+    color: #b8bbc1;
+    border-radius: 2%;
     margin: 0 auto;
     margin-bottom: .3rem; }
     .row .deals-card--heading {
       text-align: center; }
       .row .deals-card--heading h4 {
-        margin-bottom: -.5rem; }
+        margin-bottom: -.5rem;
+        text-transform: uppercase; }
+    .row .deals-card--img {
+      opacity: .8; }
     .row .deals-card--btn {
       display: block;
       margin: 0 auto;
       margin-top: .5rem;
-      margin-bottom: .5rem; }
+      margin-bottom: .5rem;
+      border-color: #454a54; }
 
 #newsletter .heading {
   text-align: center;
@@ -1058,21 +1077,27 @@ colors fonts etc.
 #newsletter .submit {
   padding: .3rem; }
 
-.deals-card {
-  border-radius: 2%;
-  background-color: #575e6b;
-  color: #b8bbc1; }
-  .deals-card--heading h4 {
-    text-transform: uppercase; }
-  .deals-card--img {
-    opacity: .8; }
-  .deals-card--btn {
-    border-color: #454a54; }
+/*=======================
+CULTURE PAGE MAIN CONTENT  
+=======================*/
+#culture-main .events-item--text {
+  top: 25%; }
 
+/*=======================
+		MEDIA
+=======================*/
 .galery-main {
   margin-top: 2rem; }
 
 .galery-cards {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  text-align: center; }
+
+.galery-text {
+  text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .galery-text {
+    display: none; } }
 
 

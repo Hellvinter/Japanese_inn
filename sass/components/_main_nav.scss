@@ -1,0 +1,118 @@
+
+/////Main navigation styles
+
+.navbar {
+	position: absolute; 					////// Making nav stick to top right 
+	top: 100%;								//////	by this lines					
+	right: 0%;								///// and this.
+	background-color: $dark-grey;
+	border-left: 1px solid $light-grey;		///// Creat frame 
+	border-right: 1px solid $light-grey;	///// around nav  
+	border-bottom: 1px solid $light-grey;	///// like this it's prettier.
+	clip-path: circle(0px at top right);	///// This line hidde navigation on 
+	transition: clip-path ease-in-out 700ms;///// mobile version and next stroke 
+											///// make animation more smooth.
+}											
+
+////////////////////////
+/////Create class which
+/////will be active
+/////after humburger
+/////menu will be toggled
+/////and navigation will 
+/////appear
+////////////////////////
+.navbar--open {
+	clip-path: circle(250% at top right);	/////With this stroke nav will appear 
+											/////like from circle 
+}
+
+.nav {
+	margin: 0;	///// Remove margin and padding of ul			
+	padding: 0;	///// in order to shrink it 
+}
+	
+.nav-item {
+	margin: 1rem; ///// without that navigation will shrink
+	font-size: 1.2em;
+	border-bottom: 1px solid $light-grey; 
+	text-align: center;
+}
+
+.nav-link {
+	padding: .4rem;
+}
+
+
+////////////////
+//Humburger button styles
+////////////////
+
+//Positioning of humburger container
+.menu-toggle {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 1.8rem;
+	right: 1.5rem;
+	cursor: pointer;
+}
+
+//////////
+//Humburger
+/////////
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	content: ''; ///// in order to styling it like 3 stroke button it must be empty
+  	display: block; ///// without that our humburger button don't appear
+  	background: #fff;
+  	height: 3px;
+  	width: 1.75em;
+  	border-radius: 3px;
+}
+
+.hamburger::before {
+	transform: translateY(-6px); ///// upper stroke
+}
+
+.hamburger::after {
+	transform: translateY(3px); ///// bottom storke
+}
+
+.open .hamburger {
+	transform: rotate(45deg); ////// when main strike rotate to 45deg when clicked
+}	
+
+.open .hamburger::before { 
+	opacity: 0;				///// upper stroke desapear after clicked
+}
+
+.open .hamburger::after {
+	transform: translateY(-3px) rotate(-90deg); //// bottom will rotate
+												//// and chenge position 
+}
+
+
+/*========================
+	MEDIA 
+=======================*/
+
+///// styling tables and fullscreen navigation
+@media screen and (min-width: $md) {
+	
+	.menu-toggle {
+		display: none;
+	}
+
+
+	.navbar {
+		height: auto;
+		position: relative;
+		background: transparent;
+		float: right;
+		clip-path: initial;
+	}
+	
+}	

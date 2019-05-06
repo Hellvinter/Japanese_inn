@@ -5,6 +5,39 @@
 
 
 
+////Colors var
+
+$dark-grey: rgb(69,74,84);
+$dark-late-gray: rgb(44,44,44);
+$light-grey: rgb(87, 94, 107); 
+$light-red: rgb(178,51,44);
+$silver: rgb(184, 187, 193);
+////end of colors var
+
+////Breakpoints var
+///
+
+$xs : 575.99px;
+$sm : 576px;
+$md : 768px;
+$lg : 992px;
+$xl : 1200px;
+
+///
+//// end of breakpoint var
+
+//rewrite max-width var 
+$max-width: 1200px;
+
+
+
+/*////////////// 
+
+Not my vars below
+
+/////////////*/
+
+
 
 /// Regular font family
 /// @type List
@@ -45,8 +78,6 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
 
 
 

@@ -1,8 +1,26 @@
+//=================================
+// On this page will be unic styles
+//  of Galery page
+//=================================
+
+
+
 .galery-main {
 	margin-top: 2rem;
 }
 
 .galery-cards {
 	margin-bottom: .5rem;
+	text-align: center;
 }
 
+.galery-text {
+	text-align: center;
+}
+
+
+@media screen and (max-width: $xl) {
+	.galery-text {
+		display: none;
+	}
+}

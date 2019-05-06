@@ -2,6 +2,7 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+
 /**
  * Set up a decent box model on the root element
  */
@@ -21,10 +22,34 @@ html {
   box-sizing: inherit;
 }
 
+body {
+	background: $dark-grey; 
+}
+
+ul {
+	list-style: none;	
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	border: none;
+}
+
+
+
 /**
  * Basic styles for links
  */
-a {
+ a {
   text-decoration: none;
 
   @include on-event {
@@ -32,3 +57,4 @@ a {
     text-decoration: underline;
   }
 }
+ 

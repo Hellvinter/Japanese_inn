@@ -2,57 +2,53 @@
 HOME PAGE MAIN CONTENT  
 =======================*/
 
-/* 
-Because about section is so small.
-I decide to write layout and style of it
-in one file 
- */
+////////About section styles
+///////Positioning colors fonts etc
 .about {
 	background-color: $light-grey;
-	
-	
+
 	.row {
 		flex-direction: column;
 	}
 	
 	.about-content--heading {
 		padding-top: 1rem;
-		text-align: center;
-		position: relative;
+		text-align: center;		//// centering text
 		border-bottom: 2px solid $dark-grey;
 		
 	}
 
 	.about-content--text {
-		text-align: justify;
-		padding: 1rem;
+		text-align: justify; //// default alining of text
+		padding: 1rem; ////////// create some space around text
 	}
 
 	#about-2 {
-		background-color: rgb(44,44,44);
+		background-color: $dark-late-gray;//// change bg of second subsection
 	}
 
 }
 //End of about section
 
-/* 
-layout of events
-*/
+ 
+////Style of home page
+//// Events section
+//// Have little bug when width of screen are changing 
 .events {
-	margin-top: 2rem;
+	margin-top: 2rem; //// indent from top
 }
 
 .events-item {
 	position: relative; // making position relative for change positioning of content
-	margin-bottom: 0;
+	margin-bottom: 0; /// remove margin between items
 
 	&--img {
-		position: relative;
-		z-index: -1;
+		position: relative; ///// in order z-index to work we need position relative
+		z-index: -1; //// now our content always will be visible
 		margin-bottom: -.2rem;
 	}
-	&--heading,  {
-		position: absolute;
+	&--heading,  {		
+		position: absolute;/////////this lines of code positioning heding of card
 		top: 10%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
@@ -60,7 +56,7 @@ layout of events
 	}
 
 	&--text {
-	position: absolute;
+	position: absolute; ////// and this lines positioning text
 	top: 40%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -68,14 +64,14 @@ layout of events
 	}
 
 	&--btn {
-		position: absolute;
+		position: absolute; ////// and this do same for button "More"
 		bottom: 10%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 	}
 }
 
-//placing More button
+//placing "LOAD MORE" button
 .more {
 	padding: 1rem;
 	margin-top: .5rem;
@@ -86,17 +82,19 @@ layout of events
 	}
 }
 
+
+/////Hiding second row of events section/////
+
+/* .events-row2--hidenn {
+	display:none;
+	}
+
+.events-row2--showed {
+	display: block;
+}	 
+ */
+
 /*============
 Home page end 
 ============*/
 
-/*=======================
-CULTURE PAGE MAIN CONTENT  
-=======================*/
-
-#culture-main {
-	.events-item--text {
-		top: 25%;
-	}
-
-}

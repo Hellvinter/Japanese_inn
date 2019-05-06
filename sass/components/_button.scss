@@ -11,11 +11,24 @@
 	}
 }
 
+//placement of header bottom line of buttons
+.header_togglers {
+	button {
+		border: none;
+		background: $light-grey;
+		padding: .2rem;
+	}
+	#arrowDown-btn {
+		float: right;
+	} 	
+}
+
 .events-item--btn {
 	padding: .2rem;
 }
-
+///button below load more of culture content
 #loadMore-btn {
 	padding: .3rem;
 	text-transform: uppercase;
 }
+
