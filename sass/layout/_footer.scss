@@ -4,7 +4,7 @@
 
 
 /// Footer navigation in nav.scss
-#footer {
+.footer {
 	border-top: 1px solid $light-grey;
 	margin-top: .5rem;
 }
@@ -16,6 +16,40 @@
 	}
 }
 
-.copyraight {
+.copyright {
 	text-align: center;
+}
+
+/*===================
+		MEDIA
+====================*/
+
+@media screen and (min-width: $md) {
+	// add little padding above footer content
+	// and aline items in 1 row
+	.footer {
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.footer-navbar {
+		order: 3;
+	}
+
+	.social {
+		order: 2;
+	}
+
+	.copyright {
+		order: 1;
+		align-self: flex-end;
+		
+	}
 }

@@ -8,17 +8,20 @@
 //Media query's for nav in the same file
 
 .header {
+	////// Give to header section background and stretch it to fullscreen height 
 	background: $dark-grey url("../../img/home_bg/japan_hot_springs_1280x853.png") center no-repeat;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
 
 	h1 {
+	/////Centering 	heading of header
 		text-align: center;
 		transform: translateY(15rem);
 	}	
 	
 	.header_togglers {
+	/////////////// Positioning of button on bottom of section
 		width: 100%;
 		height: auto;
 		background-color: $dark-grey;
@@ -40,13 +43,20 @@
 	background: $light-red;
 	width: 6rem;
 	height: auto;
-	margin: 0 auto;
+	margin: 0 auto; ///// This line centering Block element
 	margin-top: .1rem;
 	margin-bottom: .1rem;
 	@include border(1px, solid, $dark-grey, 50%);
 }
 ///end of logo styles
 
+/*/////////////////// 
+		MEDIA
+///////////////////*/
 
-
-
+@media screen and (min-width: $md) {
+	.logo {
+		margin: .2rem 0 .2rem 1.5rem; 
+		
+	}
+}

@@ -1,8 +1,3 @@
-/*////////////// 
-
-Not my vars below
-
-/////////////*/
 /*=========================
 Adding flexible grid system
 based on col-# class
@@ -824,6 +819,12 @@ h4 {
   -webkit-border-radius: 50%;
   border-radius: 50%; }
 
+/*/////////////////// 
+		MEDIA
+///////////////////*/
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: .2rem 0 .2rem 1.5rem; } }
 /*=======================
 HOME PAGE MAIN CONTENT  
 =======================*/
@@ -897,7 +898,7 @@ HOME PAGE MAIN CONTENT
 /*============
 Home page end 
 ============*/
-#footer {
+.footer {
   border-top: 1px solid #575e6b;
   margin-top: .5rem; }
 
@@ -906,9 +907,47 @@ Home page end
   .social-link {
     padding: .2rem; }
 
-.copyraight {
+.copyright {
   text-align: center; }
 
+/*===================
+		MEDIA
+====================*/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+  .footer-navbar {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+
+  .social {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+
+  .copyright {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -ms-flex-item-align: end;
+    align-self: flex-end; } }
 .navbar {
   position: absolute;
   top: 100%;
@@ -987,16 +1026,36 @@ Home page end
 	MEDIA 
 =======================*/
 @media screen and (min-width: 768px) {
+  .header-top .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
   .menu-toggle {
     display: none; }
 
   .navbar {
-    height: auto;
     position: relative;
-    background: transparent;
-    float: right;
     -webkit-clip-path: initial;
-    clip-path: initial; } }
+    clip-path: initial;
+    border: none;
+    margin-right: 1rem; }
+
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .nav-item {
+    border: none; } }
+@media screen and (min-width: 1200px) {
+  .header-top .row {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
 .footer-navbar {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2,7 +2,7 @@
 /////Main navigation styles
 
 .navbar {
-	position: absolute; 					////// Making nav stick to top right 
+	position: absolute; 					////// Making nav sticking to top right 
 	top: 100%;								//////	by this lines					
 	right: 0%;								///// and this.
 	background-color: $dark-grey;
@@ -99,20 +99,53 @@
 	MEDIA 
 =======================*/
 
-///// styling tables and fullscreen navigation
+///// styling tables and fullscreen navigation 769 px
 @media screen and (min-width: $md) {
-	
+	////Our navbar wrapped by row
+	//// actualy dont now WHY i do this fing
+	////maybe for tablet and desktop adaptation
+	//// work from time to time on this project
+	//// and flow of thinks are literally broken
+	//// Must to line header in row on tablets and 
+	//// desktop
+	////Maybe it's was a reason for .row in that case
+	.header-top {
+		//// and by line belowe we done our row thing
+		.row {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
 	.menu-toggle {
 		display: none;
 	}
 
 
 	.navbar {
-		height: auto;
 		position: relative;
-		background: transparent;
-		float: right;
 		clip-path: initial;
+		border: none;
+		margin-right: 1rem;
 	}
+
+	.nav {
+		display: flex;
+	}
+
+	.nav-item {
+		border: none;
+	}
+
 	
-}	
+}
+
+/// for 1200 px minor styling changes 
+
+@media screen and (min-width: $xl)	{
+	.header-top {
+		.row {
+			justify-content: space-around;
+		}
+	}
+}
