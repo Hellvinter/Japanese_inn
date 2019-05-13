@@ -16,15 +16,20 @@
 	}
 }
 
-.row {
+
+#deals-card--row1, #deals-card--row2 {
+	display: flex;
 	flex-direction: column; //// forming oneeeee big column on mobile devices 
-	
-	.deals-card {
-		background-color: $light-grey;
-		color: $silver;
-		border-radius: 2%;
-		margin: 0 auto; //// centering cards
-		margin-bottom: .3rem; /// little intend between cards
+	flex-wrap: no-wrap;
+} 
+
+.deals-card {
+	background-color: $light-grey;
+	color: $silver;
+	border-radius: 2%;
+	margin: 0 auto; //// centering cards
+	margin-right: .2rem;
+	margin-bottom: .3rem; /// little intend between cards
 		
 		&--heading {
 			text-align: center;
@@ -46,28 +51,56 @@
 			border-color: $dark-grey;
 		}
 	}
-} 
+ 
 
 /////Positioning Submit form/////
 #newsletter {
+	
+	.row {
+		justify-content: center;
+	}
+
 	.heading {
 		text-align: center;
 		text-transform: capitalize;
 	}
 
-	.email, .submit {
-		margin: 0 auto;
-	}
-
 	.email {
-		margin-bottom: 1rem;
+		border: 3px solid $light-grey;
+		border-radius: 10%;
+		margin-top: .5rem;
+		margin-right: .5rem;
+		margin-bottom: .5rem;
 	}
 
 	.submit {
-		padding: .3rem;
+		padding: .5rem;
 	}
 
 }
 
 ///// End of positioning/////
 
+//==================
+//		MEDIA
+//==================
+
+@media screen and (min-width: $lg) {
+
+	.deals-main {
+		.row {
+			flex-wrap: wrap;
+		}
+	}
+
+	#deals-card--row1, #deals-card--row2 {
+		flex-direction: row;
+	}
+	
+	.deals-card {
+		margin-right: .5rem;
+		margin-bottom: .5rem;
+	}
+	
+
+}

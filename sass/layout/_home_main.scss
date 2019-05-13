@@ -13,6 +13,7 @@ HOME PAGE MAIN CONTENT
 	
 	.about-content--heading {
 		padding-top: 1rem;
+		padding-bottom: .5rem;
 		text-align: center;		//// centering text
 		border-bottom: 2px solid $dark-grey;
 		
@@ -93,6 +94,32 @@ HOME PAGE MAIN CONTENT
 	display: block;
 }	 
  */
+
+//=====================
+//		MEDIA
+//=====================
+
+@media screen and (min-width: $lg) {
+	/// About section styles for large screen size
+	.about {
+		.row {
+			flex-direction: row;
+		}
+	}
+
+	.about-content--text {
+		margin-top: -.5rem;
+	}
+
+	////styling Events section for large screens
+	#events-row1, #events-row2 {
+		display: flex;
+	} 
+
+}
+
+
+
 
 /*============
 Home page end 

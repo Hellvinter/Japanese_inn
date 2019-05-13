@@ -3,8 +3,6 @@
 //  of Galery page
 //=================================
 
-
-
 .galery-main {
 	margin-top: 2rem;
 }
@@ -18,9 +16,63 @@
 	text-align: center;
 }
 
-
-@media screen and (max-width: $xl) {
+@media screen and (max-width: $lg) {
 	.galery-text {
 		display: none;
 	}
 }
+
+@media screen and (min-width: $lg) {
+	//////Make fansy grid for galery
+	///// just for fun
+	///.galery-main
+	#galery-cards1 {
+		grid-area: img1;
+	}
+	#galery-cards2 {
+		grid-area: img2;
+	} 
+	#galery-cards3 {
+		grid-area: img3;
+	} 
+	#galery-cards4 {
+		grid-area: img4;
+	} 
+	#galery-cards5 {
+		grid-area: img5;
+	} 
+	#galery-cards6 {
+		grid-area: img6;
+	} 
+	#galery-cards7 {
+		grid-area: img7;
+	}  
+	#galery-text1 {
+		grid-area: text1;
+	}
+	#galery-text2 {
+		grid-area: text2;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"img1 img2 img3"
+			"text1 img4 text2"
+			"img5 img6 img7";	 
+	}
+
+	.galery-cards {
+		margin-bottom: -.2rem;
+	}
+
+	.galery-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: .5rem;
+	}
+}
+
