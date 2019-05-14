@@ -677,9 +677,6 @@ img {
 button {
   border: none; }
 
-.hidden {
-  display: none; }
-
 /**
  * Basic styles for links
  */
@@ -883,6 +880,9 @@ HOME PAGE MAIN CONTENT
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
 
+.hidden {
+  display: none; }
+
 .more {
   padding: 1rem;
   margin-top: .5rem;
@@ -909,10 +909,13 @@ HOME PAGE MAIN CONTENT
   .about-content--text {
     margin-top: -.5rem; }
 
-  #events-row1, #events-row2 {
+  .events-row1, .events-row2 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+
+  .hidden {
+    display: none; } }
 /*============
 Home page end 
 ============*/

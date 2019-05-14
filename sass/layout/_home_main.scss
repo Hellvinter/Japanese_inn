@@ -72,6 +72,10 @@ HOME PAGE MAIN CONTENT
 	}
 }
 
+ .hidden {
+	display: none;
+} 
+
 //placing "LOAD MORE" button
 .more {
 	padding: 1rem;
@@ -112,10 +116,14 @@ HOME PAGE MAIN CONTENT
 	}
 
 	////styling Events section for large screens
-	#events-row1, #events-row2 {
+	.events-row1, .events-row2 {
 		display: flex;
-	} 
+	}
 
+	.hidden {
+		display: none;
+	}
+	
 }
 
 

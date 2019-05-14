@@ -13,21 +13,26 @@ $(function() {
 		//// toggleClass work that way 
 		//// in contrast with addClass
 		$('.navbar').toggleClass('navbar--open');
-		///// and by this we add clss open to parent class
-		//// of this function (this === '.menu-toggle')
+		///// and by this we add class open to parent class
+		//// of this function ("this" === '.menu-toggle')
 		$(this).toggleClass('open');
 
 	});
 
-	/*Give culture section "Load more" btn
-	function of loading more images after
-	is's clicked	
- 	*/
+	//Give culture section "Load more" btn
+	//function of loading more images after
+	//is's clicked	
+ 	//Line below give Load More button event click
  	$('#loadMore-btn').click(function(){
+ 		/// and by clicking we remove class ".hidden"
+ 		/// and more lines of content show up
+ 		/// second click will hide the additional lines of content
+ 		$('#events-row2').toggleClass('hidden');
 
- 		$('#events-row2').toggleClass('.events-item--btn', '.events-row2--showed');
 
  	});
+
+
  	////// It doesn't work yet
 
  	
