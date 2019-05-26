@@ -787,7 +787,7 @@ h4 {
   width: 1px; }
 
 .header {
-  background: #454a54 url("../../img/home_bg/japan_hot_springs_1280x853.png") center no-repeat;
+  background: #454a54 url("../img/home_bg/japan_hot_springs_1280x853.png") center no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative; }
