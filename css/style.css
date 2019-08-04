@@ -646,7 +646,8 @@ template {
  */
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -1108,7 +1109,7 @@ Home page end
   float: right; }
 
 .events-item--btn {
-  padding: .2rem; }
+  padding: .5rem; }
 
 #loadMore-btn {
   padding: .3rem;
@@ -1187,11 +1188,72 @@ Home page end
 /*=======================
 CULTURE PAGE MAIN CONTENT  
 =======================*/
-#culture-main .events-item--text {
-  top: 25%; }
-#culture-main .events-item--btn {
-  bottom: 0; }
+.culture-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2rem; }
 
+.culture-events-item {
+  position: relative;
+  margin-bottom: 0; }
+  .culture-events-item--img {
+    position: relative;
+    z-index: -1;
+    margin-bottom: -.2rem; }
+  .culture-events-item--heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: .9; }
+  .culture-events-item--text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center; }
+  .culture-events-item--btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+
+.hidden {
+  display: none; }
+
+.more {
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+  .more #loadMore-btn {
+    display: block;
+    margin: 0 auto; }
+
+@media screen and (min-width: 991.95px) {
+  .events-row1, .events-row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .hidden {
+    display: none; } }
 .galery-main {
   margin-top: 2rem; }
 

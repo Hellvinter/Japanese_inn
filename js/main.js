@@ -22,19 +22,14 @@ $(function() {
 	//Give culture section "Load more" btn
 	//function of loading more images after
 	//is's clicked	
- 	//Line below give Load More button event click
- 	$('#loadMore-btn').click(function(){
+	 //Line below give Load More button event click
+	 let loadMore = '#loadMore-btn'
+ 	$(loadMore).click(function(){
  		/// and by clicking we remove class ".hidden"
  		/// and more lines of content show up
- 		/// second click will hide the additional lines of content
- 		$('#events-row2').toggleClass('hidden');
-
-
+		 /// second click will hide the additional lines of content
+		let event = '#events-row2';
+		let hide = 'hidden'
+		$(event).toggleClass(hide) 
  	});
-
-
- 	////// It doesn't work yet
-
- 	
- 	
 });

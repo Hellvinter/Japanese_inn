@@ -7,13 +7,73 @@
 /*=======================
 CULTURE PAGE MAIN CONTENT  
 =======================*/
-#culture-main {
-	.events-item--text {
-		top: 25%;
+// #culture-main {
+// 	.events-item--text {
+// 		top: 25%;
+// 	}
+
+// 	.events-item--btn {
+// 		bottom: 0;
+// 	}
+// }
+
+
+//// Events section
+//// Have little bug when width of screen are changing 
+.culture-events {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem; //// indent from top
+	
+}
+
+.culture-events-item {
+	position: relative; // making position relative for change positioning of content
+	margin-bottom: 0; /// remove margin between items
+
+	&--img {
+		position: relative; ///// in order z-index to work we need position relative
+		z-index: -1; //// now our content always will be visible
+		margin-bottom: -.2rem;
+	}
+	&--heading {		
+		position: absolute;/////////this lines of code positioning heding of card
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: .9;
 	}
 
-	.events-item--btn {
-		bottom: 0;
+	&--text {
+	position: absolute; ////// and this lines positioning text
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	}
+
+	&--btn {
+		position: absolute; ////// and this do same for button "More"
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+ .hidden {
+	display: none;
+} 
+
+//placing "LOAD MORE" button
+.more {
+	padding: 1rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	#loadMore-btn {
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -22,3 +82,14 @@ CULTURE PAGE MAIN CONTENT
 //=======================
 //		MEDIA
 //=======================
+
+@media screen and (min-width: $lg) {
+	////styling Events section for large screens
+	.events-row1, .events-row2 {
+		display: flex;
+	}
+
+	.hidden {
+		display: none;
+	}
+}
